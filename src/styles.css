@@ -1,13 +1,10 @@
 html {
-  /*background: url('./assets/background.png') no-repeat center center fixed;*/
-  background: url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/background.png?raw=true') no-repeat center center fixed;
+  background: url(../assets/forest.png) no-repeat center center fixed;
   box-sizing: border-box;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index:0;
-  overflow: hidden;
 }
 
 h1 {
@@ -56,7 +53,7 @@ button#start {
 
 .hole:after {
   display: block;
-  background: url("https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/hole.png?raw=true") bottom center no-repeat;
+  background: url(../assets/dirt.png) bottom center no-repeat;
   background-size:contain;
   content:'';
   width: 100%;
@@ -68,8 +65,8 @@ button#start {
 }
 
 .mole {
-  background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat;
-  background-size: 40%;
+  background:url(../assets/DrawnMole.png) bottom center no-repeat;
+  background-size: 80%;
   position: absolute;
   top: 100%;
   width: 100%;
@@ -80,4 +77,12 @@ button#start {
 
 .hole.show .mole {
   top: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    width: 100%;
+    height: auto;
+  }
 }
